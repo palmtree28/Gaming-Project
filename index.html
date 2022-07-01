@@ -2,33 +2,86 @@
 <html>
 
 <head>
+   
     <link href="quizzz.css" rel="stylesheet">
-    <script src="quizzz.js"> </script>
+     <script type="text/javascript" src="quizzz.js"> </script> 
     
 </head>
 <body>
+    
+  
     <h1>WELCOME TO LANDMARKS QUIZZZ </h1>
     <h2>You will be given a picture and have to guess what the name of the land mark is.</h2>
-    <form name="quiz" id="quiz">
-        <ol> 
-     <li>
-         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Chichen_Itza_3.jpg/1024px-Chichen_Itza_3.jpg"><br>    
-        <input type= "radio" name="1radio" id="1radio" value="Mexico">
-            <label for="Mexico">Mexico</label><br>
-            <input type= "radio" name="1radio" id="1radio" value="Turkey">
-            <label for="Turkey">Turkey</label><br>
-            <input type= "radio" name="1radio" id="1radio" value="Denmark">
-            <label for="Denmark">Denmark</label><br>
-            <input type= "radio" name="1radio" id="1radio" value="England">
-            <label for="England">England</label><br>
-            </li>
-            <li name= "q2" id="q2" value="q2"></li>
     
-
+       
+       <div class="answer" id =choices>
+        <ol> 
+    
             
-        </ol>  
+                <li>
+
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Chichen_Itza_3.jpg/1024px-Chichen_Itza_3.jpg"><br>    
+       (a.)<input type= "radio" name="1radio" id="choicea1" value="Mexico">
+            <label for="Mexico">Mexico</label><br>
+        (b.)  <input type= "radio" name="1radio" id="choiceB1" value="turkey">
+           <label for="Turkey">Turkey</label><br>
+           (c.) <input type= "radio" name="1radio" id="choiceC1" value="Denmark">
+           <label for="Denmark">Denmark</label><br>
+         (d.)   <input type= "radio" name="1radio" id="choiceD1" value="England">
+         <label for="England">England</label><br><br>
+         <button onclick="results()">Get results</button>
+
+            </li>
+            
+            <li>
+            
+            <img title="Hint: On the Southeastern coast of Asia. This landmark is on the country flag, and is the largest religious monument in the world"  src="https://a.cdn-hotels.com/gdcs/production115/d1992/501b1edc-ab74-466e-b439-2e1683041df0.jpg"><br>
+               (a.) <input type= "radio" name="2radio" id="ChoiceA2" value="India">
+             <label for="India">India</label><br>
+                (b.)<input type= "radio" name="2radio" id="ChoiceB2" value="South_America">
+            <label for="South_America">South_America</label><br>
+                (c.)<input type= "radio" name="2radio" id="ChoiceC2" value="Cambodia">
+            <label for="Cambodia">Cambodia</label><br>
+                (d.)<input type= "radio" name="2radio" id="ChoiceD2" value="England">
+            <label for="England">England</label><br><br>
+            <button onclick="results()">Get results</button>
+        </li>
+
+        
 
 
+     <li>
+        <img title= "HINT: The location is right sqare in the middlie of Pakistan and Nepal"src="https://cdn.britannica.com/86/170586-050-AB7FEFAE/Taj-Mahal-Agra-India.jpg"><br>
+        (a.) <input type= "radio" name="1radio" id="ChoiceA3" value="India">
+        <label for="India">India</label><br>
+           (b.)<input type= "radio" name="1radio" id="ChoiceB3" value="France">
+       <label for="France">France</label><br>
+           (c.)<input type= "radio" name="1radio" id="ChoiceC3" value="Russia">
+       <label for="Russia">Russia</label><br>
+           (d.)<input type= "radio" name="1radio" id="ChoiceD3" value="England">
+       <label for="England">England</label><br><br>
+     
+   </li>
 
-</body>
+   <li>
+        <img title = Hint: src="https://www.routesnorth.com/wp-content/uploads/2019/08/3-Pulpit-Rock-summit.jpg"><br>
+        (a.) <input type= "radio" name="1radio" id="ChoiceA4 " value="Japan">
+        <label for="Japan">Japan</label><br>
+           (b.)<input type= "radio" name="1radio" id="ChoiceB4" value="France">
+       <label for="France">France</label><br>
+           (c.)<input type= "radio" name="1radio" id="ChoiceC4" value="Scotland">
+       <label for="Scotland">Scotland</label><br>
+           (d.)<input type= "radio" name="1radio" id="ChoiceD4" value="Norwary">
+       <label for="Norwary">Norwary</label><br><br>
+>
+
+   </li>
+        </ol>
+
+        <input type="button" onclick="results()" id="results" value="results">  
+        
+
+        
+        
+       </body>
 </html>
